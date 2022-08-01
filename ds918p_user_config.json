@@ -7,5 +7,11 @@
     },
     "synoinfo": {},
     "ramdisk_copy": {},
-    "extensions": []
+    "extensions": [],
+
+    "grub": {
+        "base_cmdline": {
+            "console": "ttyS4,115200n8"
+        }
+    }
 }
