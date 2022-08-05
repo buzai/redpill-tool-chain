@@ -145,7 +145,8 @@ jobs:
 
       - name: addalx
         run: |
-          ./redpill_tool_chain.sh add https://raw.githubusercontent.com/pocopico/rp-ext/master/alx/rpext-index.json
+          ./redpill_tool_chain.sh add https://raw.githubusercontent.com/buzai/rp-ext/main/alx/rpext-index.json
+          # https://raw.githubusercontent.com/pocopico/rp-ext/master/alx/rpext-index.json
           
       - name: 编译引导镜像
         run: |
