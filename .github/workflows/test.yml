@@ -25,12 +25,12 @@ jobs:
         include:
           #  两行一组，删除不需要的版本
 # i3 4dai
-          - platform: ds3615xs
-            version: 6.2.4-25556
-          - platform: ds3615xs
-            version: 7.0.1-42218
-          - platform: ds3615xs
-            version: 7.1.0-42661
+          # - platform: ds3615xs
+          #   version: 6.2.4-25556
+          # - platform: ds3615xs
+          #   version: 7.0.1-42218
+          # - platform: ds3615xs
+          #   version: 7.1.0-42661
 
 # xe  Intel Xeon D-1531
 #           - platform: ds3617xs
@@ -39,10 +39,10 @@ jobs:
 #             version: 7.1.0-42661
 
 # Intel Xeon D-1531
-#           - platform: ds3622xsp
-#             version: 7.0.1-42218
-#           - platform: ds3622xsp
-#             version: 7.1.0-42661
+          - platform: ds3622xsp
+            version: 7.0.1-42218
+          - platform: ds3622xsp
+            version: 7.1.0-42661
 
 # J3455
           # - platform: ds918p
@@ -145,8 +145,8 @@ jobs:
 
       - name: addalx
         run: |
-          ./redpill_tool_chain.sh add https://raw.githubusercontent.com/buzai/rp-ext/main/alx/rpext-index.json
-          # https://raw.githubusercontent.com/pocopico/rp-ext/master/alx/rpext-index.json
+          # ./redpill_tool_chain.sh add https://raw.githubusercontent.com/buzai/rp-ext/main/alx/rpext-index.json
+          ./redpill_tool_chain.sh add  https://raw.githubusercontent.com/pocopico/rp-ext/master/alx/rpext-index.json
           
       - name: 编译引导镜像
         run: |
